@@ -3,11 +3,14 @@ body{
   font-size: 14px;
   color: #0A143A;
 }
-/* Header */
-.header {
+.container {
   max-width: 1446px;
   margin: 0 auto;
-  padding-top: 30px;
+}
+/* Header */
+.header {
+  padding: 30px 0;
+  margin-bottom: 12px;
 }
 .navbar {
   display: flex;
@@ -73,3 +76,108 @@ body{
   margin-left: 5px;
 }
 /* Content */
+
+.page-content {
+  display: grid;
+  grid-template-columns: 9fr 3fr;
+  grid-column-gap: 30px;
+}
+.card-image {
+  width: 264px;
+  height: 178px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.card {
+  margin-bottom: 20px;
+}
+.card:not(:nth-child(3n)) {
+  margin-right: 20px;
+}
+.card-title {
+  font-size: 16px;
+  line-height: 19px;
+  color: #256EEB;
+  margin: 12px 0 5px 0;
+}
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+  max-width: 264px;
+  height: 50px;
+}
+.like {
+  background-color: #fff;
+  border: none;
+  cursor: pointer;
+  margin-left: 15px;
+}
+.card-link {
+  text-decoration: none;
+}
+.card-price {
+  font-size: 16px;
+  line-height: 19px;
+  margin-bottom: 10px;
+  display: block;
+}
+.card-text {
+  font-size: 14px;
+  line-height: 16px;
+  margin: 4px 0 0 0;
+  color: #c4c4c4
+}
+.sidebar .page-title {
+  font-size: 18px;
+  line-height: 21px;
+}
+.service {
+  margin-bottom: 25px;
+}
+.service:last-child:after {
+  margin-bottom: 0px;
+}
+.service-title {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  margin: 7px 0 5px 0;
+}
+.service-text {
+  font-size: 14px;
+  line-height: 16px;
+  max-width: 217px;
+}
+.footer:before {
+  content: "";
+  border: 1px solid #e5e5e5;
+  display:table-cell;
+  width: 261px;
+}
+.footer-menu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-bottom: 16px;
+}
+.footer-text {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 16px;
+  color: #C4C4C4;
+  margin-bottom: 5px;
+}
+.footer-link {
+  display: inline-block;
+  font-size: 12px;
+  line-height: 14px;
+  color: #0A143A;
+  text-decoration: none;
+  margin-bottom: 5px;
+}
